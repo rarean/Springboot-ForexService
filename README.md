@@ -29,3 +29,7 @@ GET to http://localhost:8000/currency-exchange/from/EUR/to/INR
 }
 ```
 The request above is the currency exchange value for EUR to INR. In the response, conversionMultiple is 75.
+
+# Notes
+* to publish to docker registry, you will need to add your registry info to [pom.xml](https://github.com/rarean/springboot-currencyconversion/blob/master/pom.xml#L87) with your creds [see google jib docs](https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin#to-object)
+* [flatten-maven-plugin](https://github.com/rarean/springboot-currencyconversion/blob/master/pom.xml#L117) is probably not needed
